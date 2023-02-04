@@ -41,3 +41,23 @@ p {
 body {
     background-color: rgb(231, 231, 231);
 }
+
+.topAppBar{
+    background-color: var(--light-blue-color);
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+}
+
+.topAppBarDecor{
+    background-color: var(--light-orange-color);
+    width: 100%;
+    height: 3vh;
+}
+
+lsc {
+    font-size: 24px;
+    color: #465b52;
+    margin: 15px 0 20px 0
+}
