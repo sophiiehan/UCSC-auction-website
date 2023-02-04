@@ -1,4 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans);
+:root{
+    --light-blue-color: #ECF9FF;
+    --light-orange-color: #FFE7CC;
+    --light-gray-color: #F3F3F3;
+    --dark-red-color: #BA7E7E;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -60,4 +67,9 @@ lsc {
     font-size: 24px;
     color: #465b52;
     margin: 15px 0 20px 0
+}
+
+.product1 {
+    object-position: 50% 50%;
+
 }
