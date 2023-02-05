@@ -81,18 +81,52 @@ body{
     height: 3vh;
 }
 
-product1{
-    width:300px;
-    height:400px;
-    border:1pxsolid #000;
+.rectangle-box{
+    width: 270px;
+    height: 360px;
     box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.25);
     border-radius: 60px;
+    margin-left: 5%;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column ;
 }
 
 .item1 img{
-    width: 210px; 
-    height:280px; 
-    position: fixed; 
-    left:5vw; 
-    top:165px;
+    width: 180px; 
+    height: 240px; 
+    margin: center;
+    margin-top: 10%;
+}
+
+.item1 {
+    margin-left: 15%;
+}
+
+.bottom-text {
+    margin-left: 15%;
+}
+
+.text{
+    margin-left: 15%;
+}
+
+.description {
+    margin-right: 2vw;
+    line-height: 44px;
+    font-weight: 200;
+    font-size: 1.5vw;
+    text-align: 50%;
+}
+
+.bid-button {
+    height: 4vh;
+    text-decoration: none;
+    color: var(--dark-red-color);
+    border-radius: 2vh;
+    font-size: 1.2vw;
+    margin-left: 60%;
+    margin-right: 30%;
+    background-color: var(--light-orange-color);
+    text-align: center;
 }
