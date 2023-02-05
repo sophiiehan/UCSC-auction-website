@@ -160,7 +160,7 @@ Actual cart items ==================================*/
     background-color: var(--light-orange-color);
     height: 4vh;
     text-decoration: none;
-    color:#BA7E7E;
+    color: var(--dark-red-color);
     padding-left: 3vh;
     padding-right: 3vh;
     padding-top: 2vh;
@@ -168,4 +168,13 @@ Actual cart items ==================================*/
     border-radius: 2vh;
     margin-right: 15vw;
     margin-top: 3vh;
+}
+
+.removebtn{
+    text-decoration: none;
+    color: var(--dark-red-color);
+    padding: 3vh;
+    height: 5vh;
+    align-self: center;
+    margin-bottom: 9vh; 
 }
