@@ -82,11 +82,13 @@ body{
 
 .container{
     margin-left: 50%;
-
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 54px;
     text-align: center;
+}
 
+p {
+    font-size: 44px;
 }
