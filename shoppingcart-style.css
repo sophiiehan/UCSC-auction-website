@@ -61,6 +61,14 @@ body{
     color: var(--dark-red-color);
     font-size: 1.5  vw;
 }
+.cart-Labels{
+    display: flex;
+    justify-content: left;
+    gap: 20vw;
+    color: var(--dark-red-color);
+    font-size: 1.5vw;
+    font-weight: 200;
+}
 .card-info{
     background-color: gray;
     width: 20vw;
