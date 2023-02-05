@@ -81,30 +81,46 @@ body{
     height: 3vh;
 }
 
+/* BODY ============================================================================================ */
+.rectangle-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vh;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-top: 4vh;
+}
+
 .rectangle-box{
     width: 270px;
     height: 360px;
-    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
     border-radius: 60px;
-    margin-left: 5%;
-    margin-top: 4%;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
 }
 
 .item1 img{
     width: 180px; 
     height: 240px; 
-    margin: center;
+    margin: auto;
     margin-top: 10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
 .item1 {
-    margin-left: 15%;
+    align-self: center;
+    /* margin-left: 15%; */
 }
 
 .bottom-text {
-    margin-left: 15%;
+    /* margin-left: 15%; */
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2vh;  
+    padding-right:2vh;
+    gap: 1vh;
 }
 
 .text{
@@ -115,8 +131,8 @@ body{
     margin-right: 2vw;
     line-height: 44px;
     font-weight: 200;
-    font-size: 1.5vw;
-    text-align: 50%;
+    font-size: 1vw;
+    text-align: center;
 }
 
 .bid-button {
@@ -125,8 +141,16 @@ body{
     color: var(--dark-red-color);
     border-radius: 2vh;
     font-size: 1.2vw;
-    margin-left: 60%;
-    margin-right: 30%;
+    padding-left: 4vh;
+    padding-right: 4vh;
     background-color: var(--light-orange-color);
     text-align: center;
+}
+.price{
+    color: rgb(152, 152, 152);
+}
+.home-button{
+    width: 10vh;
+    height: 10vh;
+    position: fixed;
 }

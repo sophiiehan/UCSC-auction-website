@@ -47,6 +47,7 @@ ul {
   }
 body{
     font-family: Poppins;
+    background-color: var(--light-gray-color);
     margin: 0;
 }
 
@@ -80,13 +81,26 @@ body{
     width: 100%;
     height: 3vh;
 }
-
+.description-text{
+    width: 30vw;
+    height: 80vh;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    background-color: white;
+    border-radius: 4vw;
+    text-align: center;
+    padding: 4vh;
+}
 .Title{
     font-size: 3vw;
-    margin-left: 35vw;
+    /* margin-left: 35vw; */
 }
 
 .paragraph{
+    margin-top: 4vh;
     font-size: 1vw;
-    margin-left: 1vw;
+    line-height: 4vh;
+    /* margin-left: 1vw; */
 }

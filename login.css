@@ -119,6 +119,10 @@ input{
 .register-button{
     padding: 4vh;
 }
+.register-button a{
+    text-decoration: none;
+    color: black;
+}
 .registerbtn{
     padding-left: 4vh;
     padding-right: 4vh;
