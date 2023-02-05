@@ -10,5 +10,11 @@
         "category": "Bags",
         "price": 23.00,
         "imgSrc": "images/sampleItemImage2.png"
+    },
+    {
+        "name": "Duck Hat 1",
+        "category": "Hats",
+        "price": 5.00,
+        "imgSrc": "images/hat1.png"
     }
 ]

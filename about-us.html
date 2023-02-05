@@ -11,30 +11,86 @@
 </head>
 
 <body>
+
+    <!-- the code block below is syncing with google firebase-->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+          
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyBCIdmz5qHYvfm_5jCaFM7rpo5VZZKXr6Q",
+        authDomain: "not-your-cheese.firebaseapp.com",
+        projectId: "not-your-cheese",
+        storageBucket: "not-your-cheese.appspot.com",
+        messagingSenderId: "872411107853",
+        appId: "1:872411107853:web:241e3b673ad29c5df2bb44",
+        measurementId: "G-CQLDQ38XBH"
+    };
+          
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app);
+        submitData.addEventListener('click', (e) => {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('psw').value;
+    
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    // ... makes user.uid 
+                    alert('user created successfully!');
+    
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                        // ..
+                    alert(errorMessage);
+    
+                });
+    
+        })
+    </script>
+    
     <!-- blue bar at the top -->
-    <div class="topAppBar">
-        <!-- UCSC Logo -->
-        <div class="topBarLeft">
-            <img src="images/ucscLogo.png" alt="" /> 
+        <div class="topAppBar">
+            <!-- UCSC Logo -->
+            <div class="topBarLeft">
+                <img src="images/ucscLogo.png" alt="" /> 
+            </div>
+    
+            <div class="topBarRight"></div>
+                <!-- log in button-->
+                <ul>
+                    <!-- top bar buttons -->
+                    <li><a href="shopping-cart.html">🛒</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="sign-up.html">Sign Up</a></li>
+                    <li><a href="log-in.html">Log In</a></li>
+                    <li><a href='sell-now.html'>Sell</a></li>
+                    
+                </ul>
+                <!-- shopping cart + profile logo -->
+                <img src="images/profileIcon.svg" alt="" />
+                <!-- <img src="images/cartIcon.png" alt="" /> -->
+            </div>
         </div>
-
-        <div class="topBarRight">
-            <!-- shopping cart + profile logo -->
-            <img src="images/profileIcon.svg" alt="" />
-            <img src="images/cartIcon.png" alt="" />
-        </div>
-    </div>
-    <!-- orange bar right below it -->
-    <div class="topAppBarDecor"></div>
-
+        <!-- orange bar right below it -->
+        <div class="topAppBarDecor"></div>
+    
     <!-- the title -->
     <div class="description-text">
         <p class="Title">About Us</p>
         <p class="paragraph">This is an web app where UCSC students have the entreprenural opportunity to sell items. They can sell new or lightly used items. We plan on adding a bidding feature in the future. </p>
     </div>
-
-
-
 </body>
 
 <script src="main.js"></script>

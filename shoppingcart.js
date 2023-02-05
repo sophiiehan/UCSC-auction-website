@@ -35,6 +35,39 @@ function updateCartTotal(){
     document.getElementsByClassName("subtotal")[0].innerText = '$' + total
 }
 
+// load product items content form JSON file
+function loadJSON(){
+    fetch("http://localhost:3000/products")
+    .then(response => response.json())
+    .then(productsArray => renderAllProducts(productsArray)) //transforms JSON file into an array of objects
+}
+function renderAllProducts(productsArray){
+    productsArray.forEach(product => renderOneProduct(product)) // Call function renderOneProduct for every item in products
+}
+//ADDS NEW ITEM AS A SHOPPING CART LIST
+const itemContainer = document.querySelector(".cart-Items-Container");
+function renderOneProduct(product){
+    const newElement = document.createElement("div")
+    newElement.className = "cart-item"
+    newElement.innerHTML = `
+        <div class="cart-item-product">
+            <img src="${product.imgSrc}" alt="" />
+            <div class="description-text">
+                <p class="Description">${product.name}</p>
+                <p class="Sold-By">Sold By: Jane Doe</p>
+            </div>
+        </div>
+
+        <div class="right-cart-item">
+            <div class="cart-item-quantity"><p class="Quantity">1</p></div>
+            <div class="cart-item-price"><p class="Price">${product.price}</p></div>
+        </div>
+
+        <a href="#" class = "button removebtn">Remove</a>
+    `
+    itemContainer.append(newElement)
+}
+
 
 
 
