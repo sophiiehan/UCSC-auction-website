@@ -25,7 +25,7 @@ ul {
     display: block;
     color: black;
     text-align: center;
-    padding: 23px 16px;
+    padding: 23px ;
     text-decoration: none;
     
   }
@@ -81,3 +81,16 @@ body{
     height: 3vh;
 }
 
+.product{
+    width:300px;
+    height:400px;
+    border:1pxsolid #000;
+}
+
+.item1 img{
+    width:300px; 
+    height:400px; 
+    position: fixed; 
+    left:5vw; 
+    top:165px;
+}
