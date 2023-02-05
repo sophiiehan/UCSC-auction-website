@@ -16,6 +16,7 @@ function updateCartTotal(){
     var cartItems = cartItemsContainer.getElementsByClassName("cart-item")
     for (var i=0; i<cartItems.length; i++){
         var cartItem = cartItems[i] //gets the item itself
+        var itemPrice = cartItem.getElementsByClassName("Quantity")[0]
     }
 }
 
