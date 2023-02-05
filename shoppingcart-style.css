@@ -14,7 +14,7 @@ body{
     font-family: Poppins;
     margin: 0;
 }
-
+/*topBar =========================================*/
 .topAppBar{
     background-color: var(--light-blue-color);
     width: 100%;
@@ -52,8 +52,8 @@ body{
 .cart-page-body{
     display: flex;
     justify-content: space-between;
-    margin-left: 2vw;
-    margin-right: 2vw;  
+    margin-left: 10vw;
+    margin-right: 10vw;  
 }
 
 .cart-Title{
@@ -61,7 +61,7 @@ body{
     color: var(--dark-red-color);
     font-size:  1.5vw;
 }
-/* LABELS */
+/* LABELS =========================================*/
 .cart-Labels{
     display: flex;
     justify-content: space-between;
@@ -70,33 +70,51 @@ body{
     font-size: 1.5vw;
     font-weight: 200;
     width: 70vw;
-    background-color: pink;
 }
-.left-cart-labels{
+.right-cart-labels{
     display: flex;
     justify-content: flex-end;
-    margin-right: 0;
-    margin-right: 15vw;
+    margin-right: 20vw;
 }
 .quantity-title{
     margin-right: 7vw;
 }
 /* 
-Actual cart items */
+Actual cart items ==================================*/
 .cart-Items-Container{
     display: flex;
     align-items: left;
     flex-direction: column;
-    gap: 2vh;
+    gap: 2vh; /*vertical gap between every item in cart*/
 }
 .cart-item{
     display: flex;
     width: 70vw;
     justify-content: space-between;
-    background-color: aquamarine;
 }
+.cart-item-product{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vw; /*gap between image and description*/
+    width: 30vw;
+}
+.Description, .Quantity, .Price{
+    text-align: left;
+    padding-top: 3vh;
+    font-size: 3vh;
+}
+.Sold-By{
+    color: gray;
+}
+
+.right-cart-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+    margin-right: 10vw;
+}
+
 .card-info{
-    background-color: gray;
     width: 20vw;
     height: 80vh;
 }
