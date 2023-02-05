@@ -55,8 +55,17 @@ body{
 }
 
 .product2{
-    margin-top: 5vw;
-    margin-left: 5vw;
+    width:300px;
+    height:400px;
+    border:1pxsolid #000;
+}
+
+.item1 img{
+    width:300px; 
+    height:400px; 
+    position: fixed; 
+    left:5vw; 
+    top:165px;
 }
 
 .Description{
