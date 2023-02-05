@@ -59,6 +59,7 @@ body{
     margin-left: 5vw;
 }
 
-.item1{
-    
-}
+.Description, .Quantity, .Price{
+    text-align: left;
+    padding-top: 3vh;
+    font-size: 3vh;
