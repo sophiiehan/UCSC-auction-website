@@ -134,13 +134,14 @@ Actual cart items ==================================*/
 .bottom{
     display: flex;
     justify-content: space-around;
-    gap: 20vw;
+    /* gap: 20vw; */
 }
 .total{
     display: flex;
     justify-content: flex-end;
-    margin-right: 10vw;
-    padding-right: 30vw;
+    margin-right: 1vw;
+    padding-right: 1vw;
+    width: 20vw;
     gap: 2vw;
 }
 .continue-shopping-button{
@@ -154,4 +155,17 @@ Actual cart items ==================================*/
 .bottom p{
     font-size: 2vw;
     margin-top: 3.5vh;
+}
+.check-out-button{
+    background-color: var(--light-orange-color);
+    height: 4vh;
+    text-decoration: none;
+    color:#BA7E7E;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 2vh;
+    margin-right: 15vw;
+    margin-top: 3vh;
 }
