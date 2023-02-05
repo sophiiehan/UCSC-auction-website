@@ -6,6 +6,11 @@
     --light-orange-color: #FFE7CC;
     --light-gray-color: #F3F3F3;
     --dark-red-color: #BA7E7E;
+
+    --coral-color: #FD5A5B;
+    --turquoise-color: #98E9DF;
+    --purple-color: #C490D7;
+    --orange-color: #FFBC96;
 }
 
 * {
@@ -82,5 +87,70 @@ body{
 .Description-Title{
     font-size: 3.5vw;
     font-family: Poppins;
-    margin-top: 6vh;
+    margin-top: 4vh;
+}
+.Description-Details{
+    font-size: 1vw;
+    color: gray;
+    padding-top: 3vh;
+    width: 30vw;
+}
+.Description-Creator{
+    margin-top: 5vh;
+}
+.price{
+    font-size: 5vh;
+    padding-top: 0.2vh;
+}
+/*COLOR BOXES*/
+.Color-title{
+    margin-top: 2vh;
+    font-size: 0.8vw;
+}
+.color-icons{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    width: 22vw;
+}
+.color1{
+    background-color: var(--coral-color);
+    width: 10vh;
+    height: 10vh;
+}
+.color2{
+    background-color: var(--purple-color);
+    width: 10vh;
+    height: 10vh;
+}
+.color3{
+    background-color: var(--turquoise-color);
+    width: 10vh;
+    height: 10vh;
+}
+.color4{
+    background-color: var(--orange-color);
+    width: 10vh;
+    height: 10vh;
+}
+
+.checkout-button-container{
+    width:20vw;
+    padding-top: 3vh;
+    margin-top: 4vh;
+}
+.check-out-button{
+    text-decoration: none;
+    color: var(--dark-red-color);
+    padding-left: 9vh;
+    padding-right: 9vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 2vh;
+    background-color: var(--orange-color);
+}
+
+/*FOOTER*/
+.footer{
+    height: 5vh;
 }
