@@ -7,14 +7,39 @@
     --light-gray-color: #F3F3F3;
     --dark-red-color: #BA7E7E;
 }
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--light-orange-color)
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+.active {
+    background-color: var(--dark-red-color)
+  }
 body{
     font-family: Poppins;
     margin: 0;
@@ -33,8 +58,8 @@ body{
     margin-left: -1vw;
 }
 .topBarRight{
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */ 
 }
 .topBarRight img{
     scale: 0.5; 
