@@ -100,3 +100,31 @@ form{
 .sign-in-subtitle{
     padding-bottom: 2vh;
 }
+label{
+    font-family: Poppins;
+    font-size: 2vh;
+}
+input{
+    height: 8vh;
+    width: 26vw;
+}
+.email{
+    margin-top: 6vh;
+    padding: 2vh;
+}
+.psw{
+    margin-top: 3vh;
+    padding: 2vh;
+}
+.register-button{
+    padding: 4vh;
+}
+.registerbtn{
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.container-signin{
+    margin-top: 15vh;
+}
