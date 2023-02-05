@@ -140,6 +140,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 22vw;
+    gap: 2vh;
 }
 .color1{
     background-color: var(--coral-color);
