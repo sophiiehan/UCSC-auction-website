@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
-    <link rel="stylesheet" href="p.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Details</title>
+        <link rel="stylesheet" href="p.css">
+    </head>
+    <body>
 
-    <!-- blue bar at the top -->
-    <div class="topAppBar">
-        <!-- UCSC Logo -->
-        <div class="topBarLeft">
-            <img src="images/ucscLogo.png" alt="" /> 
+        <!-- blue bar at the top -->
+        <div class="topAppBar">
+            <!-- UCSC Logo -->
+            <div class="topBarLeft">
+                <img src="images/ucscLogo.png" alt="" /> 
+            </div>
+
+        <div class="topBarRight"></div>
+                <!-- log in button-->
+                <lsc>log in
+                <!-- sign up button -->
+                <lsc2> | sign up | </lsc2>
+                <!--contact us button-->
+                <lsc3>contact us</lsc3>
+                <!-- shopping cart + profile logo -->
+                <img src="images/profileIcon.svg" alt="" />
+                <img src="images/cartIcon.png" alt="" />
+            </div>
+            
+        </div>
+        <!-- orange bar right below it -->
+        <div class="topAppBarDecor"></div>
+
+        <!-- Rectangle for product -->
+        <div class="product-body">
+            <div class = "left-image">
+                <div class="l-image">
+                    <img src="images/sampleItemImage2.png" alt="" > 
+                </div>
+            </div>
+
+            <div class="right-description">
+                <p class="Description-Title"> Designer Tote Bag </p>
+                <p class = "Description-Details">Product Description: Cloth tote bag, coral red color. Turquoise Iguana design.
+
+                    <br>Size: 12in x 17in. 100% cotton</p>
+            </div>
         </div>
 
-    <div class="topBarRight"></div>
-            <!-- log in button-->
-            <lsc>log in
-            <!-- sign up button -->
-            <lsc2> | sign up | </lsc2>
-            <!--contact us button-->
-            <lsc3>contact us</lsc3>
-            <!-- shopping cart + profile logo -->
-            <img src="images/profileIcon.svg" alt="" />
-            <img src="images/cartIcon.png" alt="" />
-        </div>
+        <script scr="main.js"></script>
         
-    </div>
-    <!-- orange bar right below it -->
-    <div class="topAppBarDecor"></div>
-
-    <!-- Rectangle for product -->
-    <div class = "product2">
-        <div class="item1">
-            <img src="images/sampleItemImage.png" alt="" > 
-            <p class="Description" style = "position: fixed; left:50vw; top:165px;"> Designer Tote Bag </p>
-    
-        </div>
-    </div>
-
-    <script scr="main.js"></script>
-    
-</body>
+    </body>
 </html>

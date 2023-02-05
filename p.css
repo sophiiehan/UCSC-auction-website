@@ -12,12 +12,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 body{
     font-family: Poppins;
-    margin: 0;
+    /* margin: 0; */
 }
 
 .topAppBar{
@@ -54,20 +54,33 @@ body{
     height: 3vh;
 }
 
-.product2{
-    width:300px;
-    height:400px;
-    border:1pxsolid #000;
+
+
+
+.product-body{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
 }
 
-.item1 img{
-    width:300px; 
-    height:400px; 
-    position: fixed; 
-    left:5vw; 
-    top:165px;
+/* LEFT ================================================ */
+.left-image img{
+    scale: 0.7;
+    margin-top: -8vh;
 }
 
-.Description{
-    font-size: 5vh;
+.left-image{
+    width: 40vw;
+}
+
+/*RIGHT ================================================*/
+.right-description{
+    width: 60vw;
+}
+
+.Description-Title{
+    font-size: 3.5vw;
+    font-family: Poppins;
+    margin-top: 6vh;
 }
