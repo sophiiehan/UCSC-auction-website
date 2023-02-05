@@ -67,10 +67,6 @@ function renderOneProduct(product){
     `
     itemContainer.append(newElement)
 }
-
-
-
-
 // //Cart
 
 // let cartIcon = document.querySelector('#cart-icon');
