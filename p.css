@@ -96,6 +96,18 @@ body{
     display: flex;
     justify-content: space-around;
 }
+.main-content{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.side-panel-cart{
+    display: none;  
+    width: 40vw;
+    flex-shrink: 0;
+    background-color: #FFE7CC;
+    height: 100vh;
+}
 
 /* LEFT ================================================ */
 .left-image img{
