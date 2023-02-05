@@ -49,12 +49,22 @@ body{
     height: 3vh;
 }
 
-.Title{
+.Title1{
     font-size: 3vw;
-    margin-left: 35vw;
+    margin-left: 40%;
 }
 
-.paragraph{
+.Title2{
+    font-size: 3vw;
+    margin-left: 35%;
+}
+
+.paragraph1{
     font-size: 1vw;
-    margin-left: 1vw;
+    margin-left: 5vw;
+}
+
+.paragraph2{
+    font-size: 1vw;
+    margin-left: 34vw;
 }
