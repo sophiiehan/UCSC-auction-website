@@ -60,8 +60,8 @@
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
-    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
-    import { getDatabase,set,ref } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,signOut } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+    import { getDatabase,set,ref, update } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
     
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
@@ -93,11 +93,36 @@
             // Signed in 
             const user = userCredential.user;
             // ...
+            var lgDate = new Date();
+            update(ref(database, 'users/' + user.uid), {
+                    last_login: lgDate,
+            })
+                .then(() => {
+                    // Data saved successfully!
+                    alert('data saved successfully')
+                })
+                .catch((error) => {
+                    // The write failed...
+                    alert(error)
+                });
+                // ... makes user.uid 
+                alert('user logged in successfully!');
+
+
+
+
             })
             .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
+            alert(errorMessage);
             });
+
+        signOut(auth).then(() => {
+            // Sign-out successful.
+        }).catch((error) => {
+        // An error happened.
+        });
 
     })
 </script>
