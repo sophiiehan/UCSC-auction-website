@@ -93,3 +93,13 @@ p {
     font-size: 24px;
     text-align: center;
 }
+
+.rectangle-box {
+    width: 270px;
+    height: 500px;
+    border-radius: 60px;
+    margin-left: 5%;
+    margin-top: 4%;
+    display: flex;
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.25);
+}
