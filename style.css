@@ -13,7 +13,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: var(--light-blue-color)
+    background-color: var(--light-blue-color);
     
   }
   
@@ -40,10 +40,10 @@ ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 .active {
-    background-color: var(--dark-red-color)
+    background-color: var(--dark-red-color);
   }
 body{
     font-family: Poppins;
