@@ -6,12 +6,40 @@
     --light-orange-color: #FFE7CC;
     --light-gray-color: #F3F3F3;
     --dark-red-color: #BA7E7E;
+    --light-yellow-color: #FFFBEB;
 
     --coral-color: #FD5A5B;
     --turquoise-color: #98E9DF;
     --purple-color: #C490D7;
     --orange-color: #FFBC96;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--light-blue-color);
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 23px;
+    text-decoration: none;
+    
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: var( --light-yellow-color);
+    
+  }
 
 * {
     margin: 0;
