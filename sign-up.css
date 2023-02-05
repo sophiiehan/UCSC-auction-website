@@ -81,14 +81,15 @@ body{
 }
 
 .container{
-    margin-left: 50%;
+    margin-left: 0%;
 }
 
 h1 {
-    font-size: 54px;
+    font-size: 44px;
     text-align: center;
 }
 
 p {
-    font-size: 44px;
+    font-size: 24px;
+    text-align: center;
 }
