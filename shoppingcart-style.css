@@ -95,6 +95,8 @@ Actual cart items ==================================*/
     flex-direction: column;
     gap: 2vh; /*vertical gap between every item in cart*/
     padding-top: 5vh;
+    height: 80vh;
+    overflow-y: scroll;
 }
 .cart-item{
     display: flex;
@@ -126,4 +128,30 @@ Actual cart items ==================================*/
 .card-info{
     width: 20vw;
     height: 80vh;
+}
+
+/* Bottom ======================================*/
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    gap: 20vw;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10vw;
+    padding-right: 30vw;
+    gap: 2vw;
+}
+.continue-shopping-button{
+    font-size: 1.5vw; 
+    text-decoration: none;
+    color:#BA7E7E;
+    margin-left: 10vw;
+    margin-top: 4vh;
+    
+}
+.bottom p{
+    font-size: 2vw;
+    margin-top: 3.5vh;
 }
