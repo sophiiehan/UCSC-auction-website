@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Tote Bag 1",
+        "category": "Bags",
+        "price": 25.00,
+        "imgSrc": "images/sampleItemImage.png"
+    },
+    {
+        "name": "Tote Bag 2",
+        "category": "Bags",
+        "price": 23.00,
+        "imgSrc": "images/sampleItemImage2.png"
+    }
+]
